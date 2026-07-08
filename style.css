@@ -1,0 +1,292 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  
+}
+.container::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: url("https://www.shutterstock.com/image-photo/aerial-view-city-parking-260nw-2597475437.jpg") center/cover no-repeat;
+
+  filter: blur(6px) brightness(0.6);
+
+  transform: scale(1.05); /* Prevents white edges after blur */
+
+  z-index: -1;
+}
+
+.searchbar{
+  background: rgb(22, 90, 146);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  
+}
+.search{
+  background: #e0e0e0;
+  height: 60px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  border-radius: 30px;
+}
+.search-icon {
+    color: rgb(54, 54, 54);
+    font-size: 30px;
+}
+p1{
+  color: rgb(54, 54, 54);
+  font-size: 23px;
+  
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+
+.recent{
+  height: 190px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recentsearch{
+  height: 150px;
+  width: 700px;
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.r1{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.clock-rotate-left{
+  color: rgb(54, 54, 54);
+  font-size: 20px;
+}
+p2{
+  color: rgb(54, 54, 54);
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+
+.fair{
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  gap: 10px;
+  padding: 0px;
+  margin: 0px;
+
+}
+.fair-heading{
+  height: 50px;
+  width: 700px;
+  padding-left: 10px;
+  
+  display: flex;
+  align-items: center;
+  
+}
+pfair{
+  font-size: 30px;
+  color: rgb(128, 181, 255);
+  font-weight: 700;
+}
+.vehicle{
+  height: 250px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.car-card{
+  height: 70px;
+  width: 100%;
+  background:  rgb(22, 90, 146);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.car-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.bike-card{
+  height: 70px;
+  width: 100%;
+  background:  rgb(22, 90, 146);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bike-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.cycle-card{
+  height: 70px;
+  width: 100%;
+  background:  rgb(22, 90, 146);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cycle-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.logo{
+  height: 70px;
+  width: 70px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name{
+  height: 70px;
+  width: 200px;
+  margin-left: 10px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.chargeperhour{
+  height: 70px;
+  width: 200px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.car{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+.motorcycle{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+.bicycle{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+p3{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+
+.bottom{
+  margin-top: 76px;
+  background:  rgb(22, 90, 146);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.options{
+  
+  height: 100px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+}
+.home{
+  height: 100px;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.home:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(19, 77, 125);
+}
+.services{
+  border-radius: 30px;
+  height: 100px;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.services:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(19, 77, 125);
+}
+.activity{
+  border-radius: 30px;
+  height: 100px;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.activity:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(19, 77, 125);
+}
+.account{
+  border-radius: 30px;
+  height: 100px;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.account:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(19, 77, 125);
+}
+.house{
+  font-size: 30px;
+  color: white;
+}
+.grip{
+  font-size: 30px;
+  color: white;
+}
+.receipt{
+  font-size: 30px;
+  color: white;
+}
+.user{
+  font-size: 30px;
+  color: white;
+}
+p5{
+  font-size: 18px;
+  color: white;
+}
