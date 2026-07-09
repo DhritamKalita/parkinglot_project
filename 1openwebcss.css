@@ -24,7 +24,7 @@
   justify-content: center;
   height: 100px;
   width: 100%;
-  
+  border-bottom: 2px solid rgb(38, 41, 56);
 }
 .search{
   background: #e0e0e0;
@@ -202,6 +202,7 @@ p3{
   width: 100%;
   display: flex;
   justify-content: center;
+  border-top: 2px solid rgb(38, 41, 56);
 }
 .options{
   
